@@ -16,6 +16,7 @@ class LBCAPI(object):
             self.API_KEY = raw_input('Please enter your LocalBitcoins.com API KEY: \r\n')
         if (self.API_SECRET == ''):
             self.API_SECRET = raw_input('Please enter your LocalBitcoins.com API SECRET: \r\n') 
+            
         try:
             myself = self.getMyself()
             self.cprint("\r\nHello, " + myself['data']['username'] + ".\r\n")
@@ -35,7 +36,8 @@ class LBCAPI(object):
        
     def cprint(self, smsg):
        print smsg
-       sys.stdout.flush()     
+       sys.stdout.flush()   
+         
     def message(self, relative_path, params):
         return (str(self.nonce()) + self.API_KEY + relative_path + params).encode('utf-8')
         
