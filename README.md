@@ -5,7 +5,7 @@ LocalBitcoins app to automatically refresh online status every 14 minutes, keepi
 # Script Execution Instructions
 - Install `Python` (Python 2.7 was used for dev, https://www.python.org/downloads/)
 - Open Shell or CMD to the directory with the `LBC_OnlineRefresh.py` file. 
-- Execute `python -h LBC_OnlineRefresh.py`
+- Execute `python LBC_OnlineRefresh.py`
 - Enter your API KEY + API SECRET
 
 #LocalBitcoins API KEY / API SECRET Creation
